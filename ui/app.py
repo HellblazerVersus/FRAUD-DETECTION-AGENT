@@ -32,7 +32,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-DATASET_DIR = os.getenv("DATASET_DIR", "./HHGOA_IEEE")
+DATASET_DIR = os.getenv("DATASET_DIR", "./dataset")
 CASES_DIR = Path(os.getenv("CASES_OUTPUT_DIR", "./cases"))
 CASES_DIR.mkdir(exist_ok=True)
 
@@ -148,9 +148,9 @@ def load_case_pack() -> pd.DataFrame:
     candidate_paths = [
         f"{DATASET_DIR}/case_pack.csv",
         "data/case_pack.csv",
-        "HHGOA_IEEE/case_pack.csv",
+        "dataset/case_pack.csv",
         Path(__file__).parent.parent / "data" / "case_pack.csv",
-        Path(__file__).parent.parent / "HHGOA_IEEE" / "case_pack.csv",
+        Path(__file__).parent.parent / "dataset" / "case_pack.csv",
     ]
     for cp in candidate_paths:
         p = Path(cp)
@@ -195,9 +195,9 @@ def load_closed_cases() -> pd.DataFrame:
     candidate_paths = [
         f"{DATASET_DIR}/closed_cases_history.csv",
         "data/closed_cases_history.csv",
-        "HHGOA_IEEE/closed_cases_history.csv",
+        "dataset/closed_cases_history.csv",
         Path(__file__).parent.parent / "data" / "closed_cases_history.csv",
-        Path(__file__).parent.parent / "HHGOA_IEEE" / "closed_cases_history.csv",
+        Path(__file__).parent.parent / "dataset" / "closed_cases_history.csv",
     ]
     for cp in candidate_paths:
         p = Path(cp)
@@ -291,7 +291,7 @@ st.html("""
     <div>
       <span style="font-size:20px; font-weight:800; color:#FA6400; letter-spacing:-0.5px;">TigerGraph</span>
       <span style="font-size:20px; font-weight:800; color:#1F2937; letter-spacing:-0.5px;"> Fraud Investigation System</span>
-      <span style="font-size:11px; background:#F3F4F6; color:#6B7280; padding:3px 8px; border-radius:12px; margin-left:8px; border:1px solid #E5E7EB; font-weight:600;">Hacker House Goa</span>
+      
     </div>
   </div>
   <div style="display:flex; align-items:center; gap:10px; background:#F8FAFC; border:1px solid #CBD5E1; padding:6px 16px; border-radius:24px;">

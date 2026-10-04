@@ -1,5 +1,5 @@
 // ============================================================
-// GSQL Stored Procedures — HHGOA Fraud Investigation
+// GSQL Stored Procedures — Fraud Investigation Fraud Investigation
 // ============================================================
 
 USE GRAPH fraud_investigation

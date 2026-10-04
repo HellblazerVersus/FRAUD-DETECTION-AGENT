@@ -115,7 +115,7 @@ def main():
     parser.add_argument("--case", help="Run a single case, e.g. HHG-001")
     parser.add_argument("--workers", type=int, default=1,
                         help="Parallel workers (careful with rate limits)")
-    parser.add_argument("--dataset-dir", default=os.getenv("DATASET_DIR", "./HHGOA_IEEE"))
+    parser.add_argument("--dataset-dir", default=os.getenv("DATASET_DIR", "./dataset"))
     parser.add_argument("--skip-existing", action="store_true", default=False,
                         help="Skip cases that already have a valid JSON answer file")
     args = parser.parse_args()
@@ -133,7 +133,7 @@ def main():
     else:
         cases = case_pack
 
-    console.print(f"\n[bold cyan]🔍 HHGOA Fraud Investigation Benchmark[/bold cyan]")
+    console.print(f"\n[bold cyan]🔍 Fraud Investigation Fraud Investigation Benchmark[/bold cyan]")
     console.print(f"Running {len(cases)} case(s) with {args.workers} worker(s)\n")
 
     results = []

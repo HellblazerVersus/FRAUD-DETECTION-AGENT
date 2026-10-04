@@ -1,13 +1,13 @@
 # TigerGraph Agentic Fraud Investigation System
 
-[![Live Demo](https://img.shields.io/badge/Streamlit_App-Live_Demo-FA6400?style=for-the-badge&logo=streamlit)](https://fraud-investigationvajra.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/Streamlit_App-Live_Demo-FA6400?style=for-the-badge&logo=streamlit)](https://fraud-investigation.streamlit.app/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/HellblazerVersus/tigergraph-fraud-investigation)
 [![TigerGraph 4.2.5](https://img.shields.io/badge/TigerGraph-4.2.5_CE-2563EB?style=for-the-badge)](https://www.tigergraph.com/)
 [![Gemini](https://img.shields.io/badge/Google_Gemini-2.5_Flash-10B981?style=for-the-badge&logo=google)](https://ai.google.dev/)
 
-An autonomous, agentic fraud investigation system built with **TigerGraph Community Edition 4.2.5**, **LangGraph**, and **Google Gemini** for the **Hacker House Goa 2026** hackathon (Team Vajra).
+An autonomous, agentic fraud investigation system built with **TigerGraph Community Edition 4.2.5**, **LangGraph**, and **Google Gemini** for the **** hackathon (the community).
 
-🌐 **Live Cloud Application:** [https://fraud-investigationvajra.streamlit.app/](https://fraud-investigationvajra.streamlit.app/)
+🌐 **Live Cloud Application:** [https://fraud-investigation.streamlit.app/](https://fraud-investigation.streamlit.app/)
 
 ---
 
@@ -101,7 +101,7 @@ uv run python3 tigergraph_mcp/server.py
 
 ```
 tigergraph-fraud-investigation/
-├── HHGOA_IEEE/                  # Dataset & Fraud Policy documentation
+├── dataset/                  # Dataset & Fraud Policy documentation
 ├── schema/                      # TigerGraph DDL (10 vertex types, 18 edge types)
 ├── data/                        # High-throughput streaming ETL pipeline
 ├── gsql/                        # GSQL queries and stored procedures

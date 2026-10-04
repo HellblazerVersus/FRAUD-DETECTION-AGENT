@@ -1,4 +1,4 @@
-# TigerGraph × Hacker House Goa — Fraud Investigation Dataset (IEEE-CIS edition)
+# TigerGraph ×  — Fraud Investigation Dataset (IEEE-CIS edition)
 
 Six months of card transactions from the **IEEE-CIS Fraud Detection** dataset, published by Vesta Corporation, with **every original row and every original column kept**. Two things changed: the yes/no fraud label is gone, and every transaction carries a **risk score** from the bank's detection model instead. On top sit the things an investigation needs: customers, a real calendar, a channel, the bank's closed cases, and the 20 cases you'll be judged on.
 
@@ -183,7 +183,7 @@ Load the closed-case narratives, this README's pattern section, the policy, and 
 
 ## Attribution
 
-IEEE-CIS Fraud Detection dataset, Vesta Corporation, via the IEEE Computational Intelligence Society. Customers, calendar, channel, risk scores, closed cases, and the case pack were added by TigerGraph for the Hacker House Goa 2026 task. A small number of rows were added to seed investigation exercises.
+IEEE-CIS Fraud Detection dataset, Vesta Corporation, via the IEEE Computational Intelligence Society. Customers, calendar, channel, risk scores, closed cases, and the case pack were added by TigerGraph for the  task. A small number of rows were added to seed investigation exercises.
 
 ---
 

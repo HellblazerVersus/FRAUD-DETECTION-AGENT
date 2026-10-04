@@ -1,5 +1,5 @@
 """
-ETL pipeline: Load HHGOA_IEEE dataset into TigerGraph.
+ETL pipeline: Load dataset dataset into TigerGraph.
 Run:  python data/etl_load.py
 """
 
@@ -18,7 +18,7 @@ load_dotenv()
 # ──────────────────────────────────────────────
 # Config
 # ──────────────────────────────────────────────
-DATASET_DIR = os.getenv("DATASET_DIR", "./HHGOA_IEEE")
+DATASET_DIR = os.getenv("DATASET_DIR", "./dataset")
 TG_HOST     = os.getenv("TIGERGRAPH_HOST", "localhost")
 TG_USER     = os.getenv("TIGERGRAPH_USERNAME", "tigergraph")
 TG_PASS     = os.getenv("TIGERGRAPH_PASSWORD", "tigergraph")
